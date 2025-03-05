@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head th:insert="fragments/head">
+<!-- Head fragment -->
+</head>
+<body>
+<header th:insert="fragments/header">
+<!-- Header Fragment -->
+</header>
+
+<main>
+    <div id="index-banner" class="parallax-container">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <br><br>
+                <h1 class="header center white-text">Continuous Learning</h1>
+                <div class="row center">
+                    <h5 class="header col s12 light">Explore the course and enroll</h5>
+                </div>
+                <br>
+                <div class="row center">
+                    <a th:href="@{/discover}" class="waves-effect waves-light btn-large">Discover</a>
+                </div>
+                <br><br>
+            </div>
+        </div>
+        <div class="parallax"><img src="/img/background2.jpg" alt="Unsplash background img 2"></div>
+    </div>
+    <div class="container">
+        <div class="section">
+
+            <!--   Icon Section   -->
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center teal-text text-lighten-2"><i class="material-icons">devices</i></h2>
+                        <h5 class="center">Learn from Anywhere</h5>
+
+                        <p class="light">Our platform is designed to be accessible from any device, providing you with the tools you need to learn wherever you are.</p>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center teal-text text-lighten-2"><i class="material-icons">group</i></h2>
+                        <h5 class="center">A Community You Can Rely On</h5>
+
+                        <p class="light">Be part of a large community of people who, like you, seek to improve their skills and constantly acquire knowledge in this ever-evolving world.</p>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center teal-text text-lighten-2"><i class="material-icons">local_atm</i></h2>
+                        <h5 class="center">Affordable Prices for Everyone</h5>
+
+                        <p class="light">Because we believe knowledge should be imparted equally, we are committed to providing quality education at very affordable prices.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="parallax-container valign-wrapper">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row center">
+                    <h5 class="header col s12 light">A modern professional training school in technology.</h5>
+                </div>
+            </div>
+        </div>
+        <div class="parallax"><img src="/img/background1.jpg" alt="Unsplash background img 1"></div>
+    </div>
+
+    <div class="container">
+        <div class="section">
+
+            <div class="row">
+                <div class="col s12 center">
+                    <h4>Contact Us</h4>
+                    <p class="left-align light">We are a platform that values learning for everyone because we believe in the importance of providing quality content for interested audiences, with the goal of developing great professionals and leaders in this field. <br><br>
+                        If you have any questions or inquiries, you can reach us at <a
+                                href="mailto:contact@donnatto.tech" class="teal-text">contact@donnatto.tech</a>, and we will respond promptly.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="parallax-container valign-wrapper">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row center">
+                    <h5 class="header col s12 light">Join us and be part of this great technological revolution.</h5>
+                </div>
+            </div>
+        </div>
+        <div class="parallax"><img src="/img/background3.jpg" alt="Unsplashed background img 3"></div>
+    </div>
+</main>
+
+<footer class="page-footer teal" th:insert="fragments/footer">
+<!-- Footer fragment -->
+</footer>
+
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="/js/materialize.js"></script>
+<script src="/js/init.js"></script>
+
+</body>
+</html>
